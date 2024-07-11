@@ -8,12 +8,12 @@ function index() {
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="../../../public/assets/logo.png"
                 className="h-8 me-3"
-                alt="FlowBite Logo"
+                alt="Logista Net"
               />
               <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Flowbite
+                Logista Net
               </span>
             </a>
           </div>
@@ -24,8 +24,8 @@ function index() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="https://flowbite.com/" className="hover:underline">
-                    Flowbite
+                  <a href="#" className="hover:underline">
+                    Logista Net
                   </a>
                 </li>
                 <li>
@@ -45,7 +45,7 @@ function index() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href="../../../public/assets/facebook.png"
                     className="hover:underline "
                   >
                     Github
@@ -84,8 +84,8 @@ function index() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
+            <a href="" className="hover:underline">
+              LogistaNet
             </a>
             . All Rights Reserved.
           </span>
