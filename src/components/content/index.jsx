@@ -2,16 +2,14 @@ import {
   IconBrandSpeedtest,
   IconNumber10Small,
   IconRocket,
-  IconServer,
   IconUsers,
 } from "@tabler/icons-react";
 import React from "react";
-
 function index() {
   return (
     <>
       <section className="bg-[#02336A] bg-blend-multiply">
-        <div className="mx-auto text-center pt-24 md:pt-36">
+        <div className="mx-auto text-center py-24 md:pt-36">
           <h1 className="mb-4 px-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
             Kami berusaha membuat anda lebih mudah terhubung dengan siapapun
           </h1>
@@ -56,8 +54,8 @@ function index() {
           ></path>
         </svg>
       </section>
-      <section className="bg-[#EEF1F5] bg-blend-multiply">
-        <div className="mx-auto text-center py-12 md:py-0 md:pb-12 px-4">
+      <section className="bg-[#EEF1F5] bg-blend-multiply" id="services">
+        <div className="mx-auto text-center py-12 md:py-24 px-4">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-[#02336A] md:text-4xl lg:text-5xl">
             Fitur Kami
           </h1>
@@ -65,7 +63,7 @@ function index() {
             10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
             internet yang efektif yang menghasilkan penawaran kami.
           </p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-48">
+          <div class="grid grid-cols-2 place-content-center md:grid-cols-4 gap-4 md:px-48">
             <div class="w-full max-w-sm rounded-lg">
               <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
                 <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
@@ -77,7 +75,6 @@ function index() {
                 </span>
               </div>
             </div>
-
             <div class="w-full max-w-sm rounded-lg">
               <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
                 <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
@@ -85,7 +82,62 @@ function index() {
                 </div>
                 <h5 class="mb-1 text-xl font-medium">Customer</h5>
                 <span class="text-sm text-gray-500">
-                  Sudah lebih dari 100+ pengguna yang terdaftar
+                  Lebih dari 100+ pengguna yang terdaftar
+                </span>
+              </div>
+            </div>
+            <div class="w-full max-w-sm rounded-lg">
+              <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
+                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
+                  <IconBrandSpeedtest stroke={2} width={40} height={40} />
+                </div>
+                <h5 class="mb-1 text-xl font-medium">Unlimited</h5>
+                <span class="text-sm text-gray-500">
+                  Tidak ada batasan kuota.
+                </span>
+              </div>
+            </div>
+            <div class="w-full max-w-sm rounded-lg">
+              <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
+                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
+                  <IconRocket stroke={2} width={40} height={40} />
+                </div>
+                <h5 class="mb-1 text-xl font-medium">Bandwith</h5>
+                <span class="text-sm text-gray-500">Up to 30mbps.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#02336A] bg-blend-multiply" id="pricing">
+        <div className="mx-auto text-center py-12 md:py-24 px-4">
+          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-[#02336A] md:text-4xl lg:text-5xl">
+            Fitur Kami
+          </h1>
+          <p className="mb-8 text-lg font-normal lg:text-xl lg:px-48">
+            10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
+            internet yang efektif yang menghasilkan penawaran kami.
+          </p>
+          <div class="grid grid-cols-2 place-content-center md:grid-cols-4 gap-4 md:px-48">
+            <div class="w-full max-w-sm rounded-lg">
+              <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
+                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
+                  <IconNumber10Small stroke={2} width={40} height={40} />
+                </div>
+                <h5 class="mb-1 text-xl font-medium">Experience</h5>
+                <span class="text-sm text-gray-500">
+                  10 tahun sudah kita menyediakan layanan ini.
+                </span>
+              </div>
+            </div>
+            <div class="w-full max-w-sm rounded-lg">
+              <div class="flex flex-col items-center pb-2 md:pb-10 space-y-6">
+                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
+                  <IconUsers stroke={2} width={40} height={40} />
+                </div>
+                <h5 class="mb-1 text-xl font-medium">Customer</h5>
+                <span class="text-sm text-gray-500">
+                  Lebih dari 100+ pengguna yang terdaftar
                 </span>
               </div>
             </div>
