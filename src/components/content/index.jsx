@@ -14,20 +14,14 @@ function index() {
   };
   return (
     <>
-      <section
-        style={{
-          backgroundImage: `url("/public/assets/section/section1.png")`,
-        }}
-        className="bg-repeat"
-        id="home"
-      >
+      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')] bg-blend-multiply min-h-screen">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <button
             onClick={() => handleClickScroll("home")}
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src="./assets/logo.png" className="h-8" alt="Flowbite Logo" />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">
               LogistaNet
             </span>
           </button>
@@ -96,8 +90,8 @@ function index() {
             </ul>
           </div>
         </div>
-        <div className="mx-auto text-center py-48 md:min-h-screen px-4">
-          <h1 className="mb-4 px-4 text-3xl font-extrabold tracking-ti  ght leading-none text-white md:text-4xl lg:text-5xl">
+        <div className="mx-auto text-center py-40 px-4">
+          <h1 className="mb-4 px-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
             Kami berusaha membuat anda lebih mudah terhubung dengan siapapun
           </h1>
           <p className="mb-8 px-4 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
@@ -133,73 +127,12 @@ function index() {
             </button>
           </div>
         </div>
-        {/* <svg viewBox="0 0 1440 320">
-          <path
-            fill="#EEF1F5"
-            fill-opacity="1"
-            d="M0,96L80,106.7C160,117,320,139,480,144C640,149,800,139,960,144C1120,149,1280,171,1360,181.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg> */}
       </section>
-      <section className="bg-[#EEF1F5] bg-blend-multiply" id="services">
-        <div className="mx-auto text-center py-48 md:min-h-screen px-4">
-          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-[#02336A] md:text-4xl lg:text-5xl">
+      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')] bg-blend-multiply min-h-screen"></section>
+      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')] bg-blend-multiply min-h-screen">
+        <div className="mx-auto text-center py-48 md:max-h-screen px-4">
+          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
             Fitur Kami
-          </h1>
-          <p className="mb-8 text-lg font-normal lg:text-xl lg:px-48">
-            10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
-            internet yang efektif yang menghasilkan penawaran kami.
-          </p>
-          <div className="grid grid-cols-2 place-content-center md:grid-cols-4 gap-4 md:px-48">
-            <div className="w-full max-w-sm rounded-lg">
-              <div className="flex flex-col items-center pb-2 md:pb-10 space-y-6">
-                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
-                  <IconNumber10Small stroke={2} width={40} height={40} />
-                </div>
-                <h5 className="mb-1 text-xl font-medium">Experience</h5>
-                <span className="text-sm text-gray-500">
-                  10 tahun sudah kita menyediakan layanan ini.
-                </span>
-              </div>
-            </div>
-            <div className="w-full max-w-sm rounded-lg">
-              <div className="flex flex-col items-center pb-2 md:pb-10 space-y-6">
-                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
-                  <IconUsers stroke={2} width={40} height={40} />
-                </div>
-                <h5 className="mb-1 text-xl font-medium">Customer</h5>
-                <span className="text-sm text-gray-500">
-                  Lebih dari 100+ pengguna yang terdaftar
-                </span>
-              </div>
-            </div>
-            <div className="w-full max-w-sm rounded-lg">
-              <div className="flex flex-col items-center pb-2 md:pb-10 space-y-6">
-                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
-                  <IconBrandSpeedtest stroke={2} width={40} height={40} />
-                </div>
-                <h5 className="mb-1 text-xl font-medium">Unlimited</h5>
-                <span className="text-sm text-gray-500">
-                  Tidak ada batasan kuota.
-                </span>
-              </div>
-            </div>
-            <div className="w-full max-w-sm rounded-lg">
-              <div className="flex flex-col items-center pb-2 md:pb-10 space-y-6">
-                <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
-                  <IconRocket stroke={2} width={40} height={40} />
-                </div>
-                <h5 className="mb-1 text-xl font-medium">Bandwith</h5>
-                <span className="text-sm text-gray-500">Up to 30mbps.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="bg-[#02336A] bg-blend-multiply" id="services">
-        <div className="mx-auto text-center py-48 md:min-h-screen px-4">
-          <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-[#EEF1F5] md:text-4xl lg:text-5xl">
-            Price List
           </h1>
           <p className="mb-8 text-lg font-normal lg:text-xl lg:px-48">
             10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
