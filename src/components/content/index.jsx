@@ -14,8 +14,11 @@ function index() {
   };
   return (
     <>
-      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')] bg-blend-multiply min-h-screen">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <section
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')]"
+        id="home"
+      >
+        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
           <button
             onClick={() => handleClickScroll("home")}
             className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -90,8 +93,8 @@ function index() {
             </ul>
           </div>
         </div>
-        <div className="mx-auto text-center py-40 px-4">
-          <h1 className="mb-4 px-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
+        <div className="mx-auto text-center py-40 px-24">
+          <h1 className="mb-4 px-4 text-2xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-4xl">
             Kami berusaha membuat anda lebih mudah terhubung dengan siapapun
           </h1>
           <p className="mb-8 px-4 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
@@ -128,11 +131,42 @@ function index() {
           </div>
         </div>
       </section>
-      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')] bg-blend-multiply min-h-screen"></section>
-      <section class="bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')] bg-blend-multiply min-h-screen">
+      <section
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')]"
+        id="services"
+      >
+        <div className="max-w-screen-xl grid grid-cols-3 items-center justify-between mx-auto py-40 px-24">
+          <div className="px-4 space-y-2">
+            <h1 className="text-2xl text-[#04D7A2]">Services</h1>
+            <h1 className="text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
+              Layanan Kami
+            </h1>
+            <div className="pt-8">
+              <button className="rounded-full px-12 py-4 border border-[#04D7A2] focus:outline-none hover:bg-green-600 text-white">
+                Order Sekarang
+              </button>
+            </div>
+          </div>
+          <div className="col-span-2 space-y-4">
+            <h1 className="text-lg text-gray-300">
+              10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
+              internet yang efektif yang menghasilkan penawaran kami.
+            </h1>
+            <div className="grid grid-cols-4">
+              <div className="col-span-1">
+                <IconUsers stroke={2} width={40} height={40} color="#F0EFF4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')]"
+        id="pricing"
+      >
         <div className="mx-auto text-center py-48 md:max-h-screen px-4">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
-            Fitur Kami
+            Layanan Kami
           </h1>
           <p className="mb-8 text-lg font-normal lg:text-xl lg:px-48">
             10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
@@ -184,6 +218,10 @@ function index() {
           </div>
         </div>
       </section>
+      <section
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section4.png')]"
+        id="contact"
+      ></section>
     </>
   );
 }
