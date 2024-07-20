@@ -18,7 +18,7 @@ function index() {
   return (
     <>
       <section
-        className="max-w-screen-2xl mx-auto h-[620px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')] border border-red-600"
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')]"
         id="home"
       >
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -71,32 +71,32 @@ function index() {
               </li>
               <li>
                 <button
-                  onClick={() => handleClickScroll("layanan")}
+                  onClick={() => handleClickScroll("services")}
                   className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Layanan
+                  Services
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleClickScroll("harga")}
+                  onClick={() => handleClickScroll("pricing")}
                   className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Penawaran
+                  Pricing
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => handleClickScroll("kontak")}
+                  onClick={() => handleClickScroll("contact")}
                   className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Kontak
+                  Contact
                 </button>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mx-auto text-center py-24 px-4 md:py-44 md:px-24">
+        <div className="mx-auto text-center min-h-screen py-56 px-4 md:py-24 md:px-24">
           <h1 className="mb-4 px-4 text-2xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-4xl">
             Kami berusaha membuat anda lebih mudah terhubung dengan siapapun
           </h1>
@@ -105,7 +105,7 @@ function index() {
           </p>
           <div className="flex flex-col space-y-2 sm:flex-row sm:justify-center sm:space-y-0 px-8">
             <button
-              onClick={() => handleClickScroll("harga")}
+              onClick={() => handleClickScroll("pricing")}
               className="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
             >
               Dapatkan segera
@@ -126,7 +126,7 @@ function index() {
               </svg>
             </button>
             <button
-              onClick={() => handleClickScroll("layanan")}
+              onClick={() => handleClickScroll("services")}
               className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
             >
               Pelajari lebih lanjut
@@ -135,21 +135,21 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[840px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')] border border-red-600"
-        id="layanan"
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')]"
+        id="services"
       >
-        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center justify-between mx-auto py-12 px-4 md:py-36 md:px-24">
-          <div className="px-4 space-y-2">
-            <h1 className="text-2xl text-[#04D7A2]">layanan</h1>
-            <h1 className="text-2xl md:text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center justify-between mx-auto min-h-screen py-32 px-4 md:py-36 md:px-24">
+          <div className="relative -top-16 md:static px-4 space-y-2">
+            <h1 className="text-2xl text-[#04D7A2]">Services</h1>
+            <h1 className="text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
               Tentang Kami
             </h1>
-            <div className="py-4">
+            <div className="pt-8">
               <button
-                onClick={() => handleClickScroll("harga")}
+                onClick={() => handleClickScroll("pricing")}
                 className="rounded-full w-full md:w-auto md:px-12 py-4 border border-[#04D7A2] focus:outline-none hover:bg-green-600 text-white"
               >
-                Coba Sekarang
+                Order Sekarang
               </button>
             </div>
           </div>
@@ -216,10 +216,10 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[720px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')] border border-red-600"
-        id="harga"
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')]"
+        id="pricing"
       >
-        <div className="mx-auto text-center py-24 px-4">
+        <div className="mx-auto text-center py-48 md:max-h-screen px-4">
           <h1 className="mb-4 text-3xl font-extrabold tracking-tight leading-none text-white md:text-4xl lg:text-5xl">
             Layanan Kami
           </h1>
@@ -227,7 +227,7 @@ function index() {
             10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
             internet yang efektif yang menghasilkan penawaran kami.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:px-48">
+          <div className="grid grid-cols-2 place-content-center md:grid-cols-4 gap-4 md:px-48">
             <div className="w-full max-w-sm rounded-lg">
               <div className="flex flex-col items-center pb-2 md:pb-10 space-y-6">
                 <div className="max-w-full max-h-screen border border-gray-300 mb-3 rounded-full shadow-xl p-4 ">
@@ -274,8 +274,8 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[450px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section4.png')] border border-red-600"
-        id="harga"
+        className="bg-cover bg-no-repeat bg-[url('/public/assets/section/section4.png')]"
+        id="contact"
       ></section>
     </>
   );
