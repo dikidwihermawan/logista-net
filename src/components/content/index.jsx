@@ -1,5 +1,8 @@
 import {
   IconBrandSpeedtest,
+  IconCalendarStats,
+  IconCash,
+  IconNetwork,
   IconNumber10Small,
   IconRocket,
   IconUsers,
@@ -139,7 +142,7 @@ function index() {
           <div className="px-4 space-y-2">
             <h1 className="text-2xl text-[#04D7A2]">Services</h1>
             <h1 className="text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
-              Layanan Kami
+              Penawaran Kami
             </h1>
             <div className="pt-8">
               <button className="rounded-full px-12 py-4 border border-[#04D7A2] focus:outline-none hover:bg-green-600 text-white">
@@ -148,13 +151,57 @@ function index() {
             </div>
           </div>
           <div className="col-span-2 space-y-4">
-            <h1 className="text-lg text-gray-300">
-              10 tahun efektif. sejak 2010, kami telah menerapkan pemasaran
-              internet yang efektif yang menghasilkan penawaran kami.
-            </h1>
-            <div className="grid grid-cols-4">
-              <div className="col-span-1">
-                <IconUsers stroke={2} width={40} height={40} color="#F0EFF4" />
+            <div className="grid grid-cols-2 gap-6">
+              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconCalendarStats
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Pengalaman</h1>
+                  <span className="text-sm text-white">
+                    10 Tahun lebih kita sudah bergelut di bidang ini
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconUsers
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Pegguna</h1>
+                  <span className="text-sm text-white">
+                    Lebih dari 100+ pengguna yang terdaftar
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconCash stroke={1} width={40} height={40} color="#FFFFFF" />
+                  <h1 className="text-lg text-white">Harga</h1>
+                  <span className="text-sm text-white">
+                    Harga yang ekonomis
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconNetwork
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Jaringan</h1>
+                  <span className="text-sm text-white">
+                    Akses lebih banyak di berbagai perangkat
+                  </span>
+                </div>
               </div>
             </div>
           </div>
