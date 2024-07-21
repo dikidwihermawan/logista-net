@@ -18,129 +18,94 @@ function index() {
   return (
     <>
       <section
-        className="max-w-screen-2xl mx-auto h-[620px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section1.png')] border border-red-600"
+        className="max-w-screen-md md:max-w-screen-2xl mx-auto h-[600px] md:h-[620px] md:bg-cover bg-no-repeat bg-[url('/public/assets/background/section1.png')]"
         id="home"
       >
-        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <button
-            onClick={() => handleClickScroll("home")}
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img src="./assets/logo.png" className="h-8" alt="Flowbite Logo" />
-            <span className="self-center text-2xl text-white font-semibold whitespace-nowrap dark:text-white">
-              LogistaNet
-            </span>
-          </button>
-          <button
-            data-collapse-toggle="navbar-solid-bg"
-            type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-solid-bg"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-          <div
-            className="hidden w-full md:block md:w-auto"
-            id="navbar-solid-bg"
-          >
-            <ul className="flex flex-col mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-              <li>
-                <button
-                  onClick={() => handleClickScroll("home")}
-                  className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                  aria-current="page"
-                >
-                  Home
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleClickScroll("layanan")}
-                  className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Layanan
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleClickScroll("harga")}
-                  className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Penawaran
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => handleClickScroll("kontak")}
-                  className="block py-2 px-3 md:p-0 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Kontak
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="mx-auto text-center py-24 px-4 md:py-44 md:px-24">
-          <h1 className="mb-4 px-4 text-2xl font-extrabold tracking-tight leading-none text-white md:text-3xl lg:text-4xl">
-            Kami berusaha membuat anda lebih mudah terhubung dengan siapapun
-          </h1>
-          <p className="mb-8 px-4 text-lg font-normal text-gray-300 lg:text-xl lg:px-48">
-            Fokus kita membuat orang yang jauh dari anda, menjadi lebih dekat.
-          </p>
-          <div className="flex flex-col space-y-2 sm:flex-row sm:justify-center sm:space-y-0 px-8">
-            <button
-              onClick={() => handleClickScroll("harga")}
-              className="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
-            >
-              Dapatkan segera
-              <svg
-                className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
+        <div className="grid py-4 grid-cols-1 grid-rows-2 px-8 md:py-0 md:grid-cols-2 md:px-32">
+          <div className="md:pt-32 md:pr-40">
+            <div className="row-span-2">
+              <h1 className="py-4 text-2xl font-extrabold tracking-tight leading-none text-[#1D214E] md:text-4xl lg:text-5xl">
+                Solusi jaringan tepat untuk anda
+              </h1>
+              <p className="py-4 text-lg font-normal text-gray-600 lg:text-sm">
+                Logista Net menyediakan internet yang bisa digunakan di berbagai
+                platform, yang tentunya memudahkan anda untuk terhubung dengan
+                siapapun.
+              </p>
+            </div>
+            <div className="py-6 md:py-4">
+              <button
+                onClick={() => handleClickScroll("why_me")}
+                className="rounded-full w-full md:w-auto md:px-4 py-2 border border-[#1D214E] bg-[#1D214E] focus:outline-none hover:bg-[#1D214E] hover:bg-opacity-80 text-sm text-white"
               >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </button>
-            <button
-              onClick={() => handleClickScroll("layanan")}
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
-            >
-              Pelajari lebih lanjut
-            </button>
+                Pelajari lebih lanjut
+              </button>
+            </div>
+          </div>
+          <div className="row-span-3 py-2 md:py-12 md:w-[600px] md:h-[600px]">
+            <img src="/public/assets/section/character.png" alt="character" />
           </div>
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[840px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section2.png')] border border-red-600"
+        className="max-w-screen-2xl mx-auto h-[840px] md:h-[720px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section2.png')]"
+        id="why_me"
+      >
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center gap-6 justify-between mx-auto py-12 px-8 md:py-40 md:px-24">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+            <div className="flex flex-col items-center space-y-6 text-center">
+              <div className="w-36">
+                <img
+                  src="/public/assets/section/easy-to-use.png"
+                  alt="Easy to use"
+                />
+              </div>
+              <h1 className="text-lg text-[#04D7A2]">Mudah untuk digunakan</h1>
+              <span className="text-sm text-gray-600">
+                Tidak sulit untuk menggunakan layanan kami, anda tinggal duduk
+                bersantai hingga tim kami selesai memasangnya.
+              </span>
+            </div>
+          </div>
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+            <div className="flex flex-col items-center space-y-6 text-center">
+              <div className="w-36">
+                <img
+                  src="/public/assets/section/select-package.png"
+                  alt="Select Package"
+                />
+              </div>
+              <h1 className="text-lg text-[#04D7A2]">Pilihan Paket</h1>
+              <span className="text-sm text-gray-600">
+                Terdapat pilihan paket sesuai dengan kebutuhan anda, yang
+                pastinya harga terjangkau
+              </span>
+            </div>
+          </div>
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+            <div className="flex flex-col items-center space-y-6 text-center">
+              <div className="w-36">
+                <img
+                  src="/public/assets/section/unlimited.png"
+                  alt="Unlimited"
+                />
+              </div>
+              <h1 className="text-lg text-[#04D7A2]">Unlimited</h1>
+              <span className="text-sm text-gray-600">
+                Anda tidak perlu khawatir kehabisan kuota internet, karena
+                layanan kami tidak ada batasan kuota maksimum.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="max-w-screen-2xl mx-auto h-[840px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section3.png')]"
         id="layanan"
       >
-        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center justify-between mx-auto py-12 px-4 md:py-36 md:px-24">
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center justify-between mx-auto py-12 px-4 md:py-24 md:px-24">
           <div className="px-4 space-y-2">
-            <h1 className="text-2xl text-[#04D7A2]">layanan</h1>
+            {/* <h1 className="text-2xl text-[#04D7A2]">Layanan</h1> */}
             <h1 className="text-2xl md:text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
               Tentang Kami
             </h1>
@@ -174,7 +139,7 @@ function index() {
                   </span>
                 </div>
               </div>
-              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+              <div className="border border-[#  ] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
                 <div className="flex flex-col items-center space-y-2">
                   <IconUsers
                     stroke={1}
@@ -216,7 +181,7 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[720px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section3.png')] border border-red-600"
+        className="max-w-screen-2xl mx-auto h-[720px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section3.png')]"
         id="harga"
       >
         <div className="mx-auto text-center py-24 px-4">
@@ -274,7 +239,7 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[450px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/section/section4.png')] border border-red-600"
+        className="max-w-screen-2xl mx-auto h-[450px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section4.png')]"
         id="harga"
       ></section>
     </>
