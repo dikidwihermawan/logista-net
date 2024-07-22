@@ -18,7 +18,7 @@ function index() {
   return (
     <>
       <section
-        className="max-w-screen-md md:max-w-screen-2xl mx-auto h-[600px] md:h-[620px] md:bg-cover bg-no-repeat bg-[url('/public/assets/background/section1.png')]"
+        className=" max-w-screen-md md:max-w-screen-2xl mx-auto h-[600px] md:h-[620px] md:bg-cover bg-no-repeat bg-[url('/public/assets/background/section1.png')]"
         id="home"
       >
         <div className="grid py-4 grid-cols-1 grid-rows-2 px-8 md:py-0 md:grid-cols-2 md:px-32">
@@ -35,7 +35,7 @@ function index() {
             </div>
             <div className="py-6 md:py-4">
               <button
-                onClick={() => handleClickScroll("why_me")}
+                onClick={() => handleClickScroll("about_me")}
                 className="rounded-full w-full md:w-auto md:px-4 py-2 border border-[#1D214E] bg-[#1D214E] focus:outline-none hover:bg-[#1D214E] hover:bg-opacity-80 text-sm text-white"
               >
                 Pelajari lebih lanjut
@@ -48,11 +48,102 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-[840px] md:h-[720px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section2.png')]"
+        className="max-w-screen-2xl mx-auto h-[840px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section2.png')]"
+        id="about_me"
+      >
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 items-center justify-between mx-auto py-12 px-4 md:py-24 md:px-24">
+          {/* <div className="col-span-2 px-4 space-y-6">
+            <h1 className="text-white text-lg">
+              Kami memulai ini dengan koneksi-koneksi terdekat. Seiring
+              berjalannya waktu, kami dipercaya oleh masyarakat sehingga kami
+              ingin mencoba layanan ini ke ranah yang cukup luas
+            </h1>
+            <div className="grid grid-cols-2 gap-6 text-center">
+              <div className="border border-[#04D7A2] bg-[#1D214E] hover:bg-opacity-80 text-[#1D214E] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconCalendarStats
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Pengalaman</h1>
+                  <span className="text-sm text-white">
+                    10 Tahun lebih kita sudah bergelut di bidang ini
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] bg-[#1D214E] hover:bg-opacity-80 text-[#1D214E] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconUsers
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Pegguna</h1>
+                  <span className="text-sm text-white">
+                    Lebih dari 100+ pengguna yang terdaftar
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] bg-[#1D214E] hover:bg-opacity-80 text-[#1D214E] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconCash stroke={1} width={40} height={40} color="#FFFFFF" />
+                  <h1 className="text-lg text-white">Harga</h1>
+                  <span className="text-sm text-white">
+                    Harga yang ekonomis
+                  </span>
+                </div>
+              </div>
+              <div className="border border-[#04D7A2] bg-[#1D214E] hover:bg-opacity-80 text-[#1D214E] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
+                <div className="flex flex-col items-center space-y-2">
+                  <IconNetwork
+                    stroke={1}
+                    width={40}
+                    height={40}
+                    color="#FFFFFF"
+                  />
+                  <h1 className="text-lg text-white">Jaringan</h1>
+                  <span className="text-sm text-white">
+                    Akses lebih banyak di berbagai perangkat
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          <div className="py-2 md:w-[500px] md:h-[500px]">
+            <img src="/public/assets/section/aboutme.png" alt="character" />
+          </div>
+          <div className="md:pl-24">
+            <div className="px-4 space-y-6">
+              <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight leading-none antialiased text-[#1D214E]">
+                Tentang Kami
+              </h1>
+              <h1 className="text-md md:text-md spaci tracking-tight antialiased text-gray-600">
+                Logista Net berdiri sejak 2010 , kami juga telah diberikan
+                kepercayaan lebih oleh masyarakat sekitar. Maka dari itu kami
+                ingin memasarkan layanan internet kami lebih luas lagi
+                kedepannya.
+              </h1>
+              <div className="py-2">
+                <button
+                  onClick={() => handleClickScroll("why_me")}
+                  className="rounded-full w-full md:w-auto md:px-12 py-2 border border-[#04D7A2] focus:outline-none hover:text-white hover:bg-[#1D214E] hover:bg-opacity-80 text-[#1D214E]"
+                >
+                  Coba Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        className="max-w-screen-2xl mx-auto h-[840px] md:h-[720px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section3.png')]"
         id="why_me"
       >
         <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center gap-6 justify-between mx-auto py-12 px-8 md:py-40 md:px-24">
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -67,7 +158,7 @@ function index() {
               </span>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -82,7 +173,7 @@ function index() {
               </span>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -95,87 +186,6 @@ function index() {
                 Anda tidak perlu khawatir kehabisan kuota internet, karena
                 layanan kami tidak ada batasan kuota maksimum.
               </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section
-        className="max-w-screen-2xl mx-auto h-[840px] md:h-[620px] bg-cover bg-no-repeat bg-[url('/public/assets/background/section3.png')]"
-        id="layanan"
-      >
-        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center justify-between mx-auto py-12 px-4 md:py-24 md:px-24">
-          <div className="px-4 space-y-2">
-            {/* <h1 className="text-2xl text-[#04D7A2]">Layanan</h1> */}
-            <h1 className="text-2xl md:text-4xl text-white font-extrabold tracking-tight leading-none antialiased">
-              Tentang Kami
-            </h1>
-            <div className="py-4">
-              <button
-                onClick={() => handleClickScroll("harga")}
-                className="rounded-full w-full md:w-auto md:px-12 py-4 border border-[#04D7A2] focus:outline-none hover:bg-green-600 text-white"
-              >
-                Coba Sekarang
-              </button>
-            </div>
-          </div>
-          <div className="col-span-2 px-4 space-y-6">
-            <h1 className="text-white text-lg">
-              Kami memulai ini dengan koneksi-koneksi terdekat. Seiring
-              berjalannya waktu, kami dipercaya oleh masyarakat sehingga kami
-              ingin mencoba layanan ini ke ranah yang cukup luas
-            </h1>
-            <div className="grid grid-cols-2 gap-6 text-center">
-              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
-                <div className="flex flex-col items-center space-y-2">
-                  <IconCalendarStats
-                    stroke={1}
-                    width={40}
-                    height={40}
-                    color="#FFFFFF"
-                  />
-                  <h1 className="text-lg text-white">Pengalaman</h1>
-                  <span className="text-sm text-white">
-                    10 Tahun lebih kita sudah bergelut di bidang ini
-                  </span>
-                </div>
-              </div>
-              <div className="border border-[#  ] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
-                <div className="flex flex-col items-center space-y-2">
-                  <IconUsers
-                    stroke={1}
-                    width={40}
-                    height={40}
-                    color="#FFFFFF"
-                  />
-                  <h1 className="text-lg text-white">Pegguna</h1>
-                  <span className="text-sm text-white">
-                    Lebih dari 100+ pengguna yang terdaftar
-                  </span>
-                </div>
-              </div>
-              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
-                <div className="flex flex-col items-center space-y-2">
-                  <IconCash stroke={1} width={40} height={40} color="#FFFFFF" />
-                  <h1 className="text-lg text-white">Harga</h1>
-                  <span className="text-sm text-white">
-                    Harga yang ekonomis
-                  </span>
-                </div>
-              </div>
-              <div className="border border-[#04D7A2] p-4 rounded-tl-2xl rounded-tr-md rounded-bl-md rounded-br-2xl">
-                <div className="flex flex-col items-center space-y-2">
-                  <IconNetwork
-                    stroke={1}
-                    width={40}
-                    height={40}
-                    color="#FFFFFF"
-                  />
-                  <h1 className="text-lg text-white">Jaringan</h1>
-                  <span className="text-sm text-white">
-                    Akses lebih banyak di berbagai perangkat
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

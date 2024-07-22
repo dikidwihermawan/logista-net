@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -7,13 +7,16 @@ function Header() {
     setOpenMenu((e) => (e = !e));
   };
 
-  useEffect(() => {
-    console.log(openMenu);
-  }, []);
+  const handleClickScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
-      <div className="bg-[#FFFFFF] sticky top-0 max-w-screen-2xl flex flex-wrap items-center justify-between shadow-sm mx-auto p-4 md:px-12 md:py-4 border-b border-b-gray-300">
+      <div className="bg-[#FFFFFF] sticky top-0 max-w-screen-2xl flex flex-wrap items-center justify-between shadow-sm mx-auto p-4 md:px-12 md:py-4 border-b border-b-gray-300 z-10">
         <button
           onClick={() => handleClickScroll("home")}
           className="flex items-center space-x-3 rtl:space-x-reverse"
