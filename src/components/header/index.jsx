@@ -77,7 +77,7 @@ function Header() {
             </li>
             <li>
               <button
-                onClick={() => handleClickScroll("harga")}
+                onClick={() => handleClickScroll("penawaran")}
                 className="block py-2 px-3 md:p-0 text-[#1D214E] text-start w-full hover:bg-white hover:text-black md:text-[#1D214E] rounded md:hover:bg-transparent md:hover:text-blue-600"
               >
                 Penawaran
