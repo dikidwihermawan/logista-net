@@ -18,7 +18,7 @@ function index() {
   return (
     <>
       <section
-        className=" max-w-screen-md md:max-w-screen-2xl mx-auto h-full md:h-[620px] md:bg-cover bg-no-repeat bg-[url('../public/assets/background/section1.png')]"
+        className=" max-w-screen-md md:max-w-screen-2xl mx-auto h-full md:h-[620px] md:bg-cover bg-no-repeat bg-[url('../../public/assets/background/section1.png')]"
         id="home"
       >
         <div className="grid py-4 grid-cols-1 grid-rows-2 px-8 md:py-0 md:grid-cols-2 md:px-32">
@@ -43,17 +43,23 @@ function index() {
             </div>
           </div>
           <div className="row-span-3 py-2 md:py-12 md:w-[600px] md:h-[600px]">
-            <img src="../public/assets/section/character.png" alt="character" />
+            <img
+              src="../../public/assets/section/character.png"
+              alt="character"
+            />
           </div>
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-full md:h-[620px] bg-cover bg-no-repeat bg-[url('../public/assets/background/section2.png')]"
+        className="max-w-screen-2xl mx-auto h-full md:h-[620px] bg-cover bg-no-repeat bg-[url('../../public/assets/background/section2.png')]"
         id="about_me"
       >
         <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-2 items-center justify-between mx-auto py-12 px-4 md:px-24">
           <div className="py-2 md:w-[500px] md:h-[500px]">
-            <img src="../public/assets/section/aboutme.png" alt="character" />
+            <img
+              src="../../public/assets/section/aboutme.png"
+              alt="character"
+            />
           </div>
           <div className="md:pl-24">
             <div className="px-4 space-y-6">
@@ -78,7 +84,7 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-full md:h-[640px] bg-cover bg-no-repeat bg-[url('../public/assets/background/section3.png')]"
+        className="max-w-screen-2xl mx-auto h-full md:h-[640px] bg-cover bg-no-repeat bg-[url('../../public/assets/background/section3.png')]"
         id="layanan"
       >
         <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight leading-none antialiased text-center text-[#1D214E] pt-24">
@@ -89,7 +95,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/easy-to-use.png"
+                  src="../../public/assets/section/easy-to-use.png"
                   alt="Easy to use"
                 />
               </div>
@@ -105,7 +111,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/select-package.png"
+                  src="../../public/assets/section/select-package.png"
                   alt="Select Package"
                 />
               </div>
@@ -120,7 +126,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/unlimited.png"
+                  src="../../public/assets/section/unlimited.png"
                   alt="Unlimited"
                 />
               </div>
@@ -134,7 +140,7 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-full md:h-[800px] bg-cover bg-no-repeat bg-[url('../public/assets/background/section3.png')]"
+        className="max-w-screen-2xl mx-auto h-full md:h-[800px] bg-cover bg-no-repeat bg-[url('../../public/assets/background/section3.png')]"
         id="penawaran"
       >
         <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight leading-none antialiased text-center text-[#1D214E] pt-24">
@@ -145,7 +151,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/easy-to-use.png"
+                  src="../../public/assets/section/easy-to-use.png"
                   alt="Easy to use"
                 />
               </div>
@@ -163,7 +169,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/select-package.png"
+                  src="../../public/assets/section/select-package.png"
                   alt="Select Package"
                 />
               </div>
@@ -178,7 +184,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/unlimited.png"
+                  src="../../public/assets/section/unlimited.png"
                   alt="Unlimited"
                 />
               </div>
@@ -193,7 +199,7 @@ function index() {
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
-                  src="../public/assets/section/select-package.png"
+                  src="../../public/assets/section/select-package.png"
                   alt="Select Package"
                 />
               </div>
