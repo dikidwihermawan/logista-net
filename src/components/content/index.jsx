@@ -84,8 +84,8 @@ function index() {
         <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight leading-none antialiased text-center text-[#1D214E] pt-24">
           Mengapa memilih kami ?
         </h1>
-        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center gap-6 justify-between mx-auto py-12 md:py-16 px-8 md:px-24">
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-3 items-center gap-6 justify-between mx-auto py-8 px-8 md:px-24">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img src="./assets/section/easy-to-use.png" alt="Easy to use" />
@@ -98,7 +98,7 @@ function index() {
               </span>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -113,7 +113,7 @@ function index() {
               </span>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img src="./assets/section/unlimited.png" alt="Unlimited" />
@@ -128,29 +128,32 @@ function index() {
         </div>
       </section>
       <section
-        className="max-w-screen-2xl mx-auto h-full md:h-[800px] bg-cover bg-no-repeat bg-[url('./assets/background/section3.png')]"
+        className="max-w-screen-2xl mx-auto h-full md:h-[620px] bg-cover bg-no-repeat bg-[url('./assets/background/section3.png')]"
         id="penawaran"
       >
         <h1 className="text-2xl md:text-4xl font-extrabold tracking-tight leading-none antialiased text-center text-[#1D214E] pt-24">
           Paket yang tersedia
         </h1>
-        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-4 items-center gap-6 justify-between mx-auto py-12 md:py-16 px-8 md:px-24">
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+        <div className="max-w-screen-xl grid grid-cols-1 md:grid-cols-4 items-center gap-6 justify-between mx-auto py-8 px-8 md:px-24">
+          <div className="h-full w-full p-4 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img src="./assets/section/easy-to-use.png" alt="Easy to use" />
               </div>
-              <h1 className="text-lg text-[#04D7A2]">Hemat</h1>
+              <h1 className="text-lg text-[#04D7A2]">10 Mbps</h1>
               <span className="text-sm text-gray-600">
                 <ul>
-                  <li>10Mbps</li>
+                  <li>10 Mbps</li>
                   <li>Unlimitied</li>
                   <li>Free Router</li>
                 </ul>
               </span>
+              <button className="w-full px-4 py-2 text-xs text-white rounded-full bg-blue-600 hover:bg-blue-800 border hover:border-green-600">
+                Dapatkan Segera
+              </button>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+          <div className="h-full w-full p-4 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -158,26 +161,38 @@ function index() {
                   alt="Select Package"
                 />
               </div>
-              <h1 className="text-lg text-[#04D7A2]">Pilihan Paket</h1>
+              <h1 className="text-lg text-[#04D7A2]">20 Mbps</h1>
               <span className="text-sm text-gray-600">
-                Terdapat pilihan paket sesuai dengan kebutuhan anda, dengan
-                harga yang terjangkau
+                <ul>
+                  <li>20 Mbps</li>
+                  <li>Unlimitied</li>
+                  <li>Free Router</li>
+                </ul>
               </span>
+              <button className="w-full px-4 py-2 text-xs text-white rounded-full bg-blue-600 hover:bg-blue-800 border hover:border-green-600">
+                Dapatkan Segera
+              </button>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+          <div className="h-full w-full p-4 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img src="./assets/section/unlimited.png" alt="Unlimited" />
               </div>
-              <h1 className="text-lg text-[#04D7A2]">Unlimited</h1>
+              <h1 className="text-lg text-[#04D7A2]">50 Mbps</h1>
               <span className="text-sm text-gray-600">
-                Anda tidak perlu khawatir kehabisan kuota internet, karena
-                layanan kami tidak ada batasan kuota maksimum.
+                <ul>
+                  <li>50 Mbps</li>
+                  <li>Unlimitied</li>
+                  <li>Free Router</li>
+                </ul>
               </span>
+              <button className="w-full px-4 py-2 text-xs text-white rounded-full bg-blue-600 hover:bg-blue-800 border hover:border-green-600">
+                Dapatkan Segera
+              </button>
             </div>
           </div>
-          <div className="h-full w-full p-12 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-12 hover:duration-300 ">
+          <div className="h-full w-full p-4 bg-white border border-gray-300 rounded shadow-lg hover:-translate-y-6 hover:duration-300 ">
             <div className="flex flex-col items-center space-y-6 text-center">
               <div className="w-36">
                 <img
@@ -185,11 +200,17 @@ function index() {
                   alt="Select Package"
                 />
               </div>
-              <h1 className="text-lg text-[#04D7A2]">Pilihan Paket</h1>
+              <h1 className="text-lg text-[#04D7A2]">100 Mbps</h1>
               <span className="text-sm text-gray-600">
-                Terdapat pilihan paket sesuai dengan kebutuhan anda, dengan
-                harga yang terjangkau
+                <ul>
+                  <li>100 Mbps</li>
+                  <li>Unlimitied</li>
+                  <li>Free Router</li>
+                </ul>
               </span>
+              <button className="w-full px-4 py-2 text-xs text-white rounded-full bg-blue-600 hover:bg-blue-800 border hover:border-green-600">
+                Dapatkan Segera
+              </button>
             </div>
           </div>
         </div>
